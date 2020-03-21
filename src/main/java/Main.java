@@ -50,12 +50,12 @@ public class Main {
 		String annee = "1900";
 		int sommeNaissanceFor1900 = 0;
 		sommeNaissanceFor1900 = ActionNaissance.sommeNaissanceByAnnee(listNaissance, annee);
-		System.out.println("Nombre Naissance pour l'anne" + annee + " = " + sommeNaissanceFor1900);
+		System.out.println("Nombre Naissance pour l'annee " + annee + " = " + sommeNaissanceFor1900);
 
 		System.out.println("------------------------exo 5-----------------------");
 		String annee2 = "1971";
 		double moyenneNaissanceFor1971 = 0;
 		moyenneNaissanceFor1971 = ActionNaissance.moyenneNaissanceByAnnee(listNaissance, annee2);
-		System.out.println(moyenneNaissanceFor1971);
+		System.out.println("Moyenne du nombre de naissance pour l'annee " + annee + " = " + moyenneNaissanceFor1971);
 	}
 }
