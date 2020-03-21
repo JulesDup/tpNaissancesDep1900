@@ -28,7 +28,8 @@ public class ActionNaissance {
 
 	public static double moyenneNaissanceByAnnee(List<Naissance> listNaissance, String annee) {
 		double nb = listNaissance.stream().filter(naissance -> naissance.getAnnee().equals(annee))
-				.mapToDouble(naissance -> naissance.getNombre()).average().orElse(Double.NaN);
+				.mapToDouble(naissance -> naissance.getNombre()).average().getAsDouble();
+		// orElse(Double.NaN);
 
 		return nb;
 	}
